@@ -9,5 +9,16 @@
     <body>
     <h1>Entropy Rebalancing Simulation</h1>
     <p>A simulation exploring entropy rebalancing in recursive systems</p>
+
+    <label for="coherence">Coherence (C): <span id="cVal"> 0.5</span></label>
+    <input type="range" min="0" max="1" step="0.01" value="0.5" id="coherence"/><br/>
+
+    <label for="observation">Observation (O): <span id="oVal"> 0.5</span></label>
+    <input type="range" min="0" max="1" step="0.01" value="0.5" id="observation" /><br/>
+
+    <canvas id="entropyChart" widht="600" height="300"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
